@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    /* If different font is desired, change this */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+/* Styles the nav bar */
+.navbar {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+/* Make the title a tad bigger */
+.title {
+    font-size: 2rem;
+}
+
+/* Make the list go horizontal */
+.navbar ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    gap: 1rem;
+    display: flex;
+}
+
+/* Make the links better */
+.navbar a {
+    color: inherit;
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: .25rem;
+}
+
+/* When on that page make it selected */
+.navbar li:active {
+    background-color: #555;
+}
+
+/* When hovering make it obvious */
+.navbar li:hover {
+    background-color: #777;
+}
