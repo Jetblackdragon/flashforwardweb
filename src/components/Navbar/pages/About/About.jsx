@@ -13,10 +13,7 @@ export default function About() {
         {   
             // All of the text for the currently doing should go here
             title: "What Are We Currently Doing?",
-            text: "Develop Solar Lighting Prototypes: We are building and testing solar-powered flashlights and lamps tailored to the specific needs of communities without reliable electricity.",
-            text: "Raise Awareness and Funds: Through our GoFundMe campaign, we are sharing our mission and gathering the resources needed to kickstart production and distribution.",
-            text: "Collaborate and Research: We are identifying communities that will benefit most from our solutions, while building partnerships with other nonprofits and organizations.",
-            text: "Launch Our Online Platform: We’re designing a website to share updates, connect with supporters, and provide transparent insights into our work and impact."
+            text: " - Develop Solar Lighting Prototypes: We are building and testing solar-powered flashlights and lamps tailored to the specific needs of communities without reliable electricity. | - Raise Awareness and Funds: Through our GoFundMe campaign, we are sharing our mission and gathering the resources needed to kickstart production and distribution. | - Collaborate and Research: We are identifying communities that will benefit most from our solutions, while building partnerships with other nonprofits and organizations. | - Launch Our Online Platform: We're designing a website to share updates, connect with supporters, and provide transparent insights into our work and impact."
         },
         {   
             // All of the text for the who we are should go here
@@ -45,7 +42,7 @@ export default function About() {
                     </div>
                     <div className="info">
                         <h2>{boxes[index].title}</h2>
-                        <p>{boxes[index].text}</p>
+                        {boxes[index].text.split("|").map(text => <p>{text}</p>)}
                     </div>
                 </div>
             </div>
