@@ -9,7 +9,8 @@ import Home from './components/Navbar/pages/Home/Home';
 import Donations from './components/Navbar/pages/Donations/Donations';
 
 function App() {
-  // Main stuff
+  // This stuff will allways be showing, only one of the routes will be showing but this
+  // file will always be visible
   return (
     <>
       <Navbar />

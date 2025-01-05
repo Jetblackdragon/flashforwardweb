@@ -1,6 +1,6 @@
 import React from 'react';
 import './Navbar.css';
-import { Link } from 'react-router-dom';
+import { Link, useMatch, useResolvedPath } from 'react-router-dom';
 
 // If you are going to add a new page:
 // - Make a new folder in pages with the name of the page
@@ -26,12 +26,13 @@ const Navbar = () => {
     )
 }
 
-function CustomLink({ href, children, ...props}) {
-    const path = window.location.pathname;
-    
+function CustomLink({ to, children, ...props}) {
+    const resolvedPath = useResolvedPath(to)
+    const isActive = useMatch({ path: resolvedPath.pathname, end: true })
+
     return (
-        <li className={path === href ? "active": ""}>
-            <Link to={href} {...props}>
+        <li className={isActive ? "active" : ""}>
+            <Link to={to} {...props}>
                 {children}
             </Link>
         </li>

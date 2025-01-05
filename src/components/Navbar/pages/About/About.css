@@ -1,0 +1,54 @@
+.content {
+    margin: 0;
+    height: 100%;
+    background-image: url(https://viewbug-blog.s3.amazonaws.com/wp-content/uploads/2023/05/adrian-infernus-lFrbc9XBU00-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body {
+    overflow: hidden;
+}
+
+.buttonContainer {
+    float: left;
+    height: 100%;
+    align-items: center;
+    display: flex;
+}
+
+.buttonContainer button {
+    display: block;
+    margin: auto;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 3rem;
+    color: white;
+}
+
+.buttonContainer button:hover {
+    color: rgb(220, 220, 220)
+}
+
+.buttonContainer button:active {
+    color: rgb(190, 190, 190)
+}
+
+.box {
+    backdrop-filter: blur(100px);
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+
+.info h2 {
+    font-size: 5rem;
+    color: white;
+}
+
+.info p {
+    font-size: 2rem;
+    color: white;
+}

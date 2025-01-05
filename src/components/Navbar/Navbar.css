@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-body {
+* {
     margin: 0;
 
     /* If different font is desired, change this */
@@ -45,7 +45,7 @@ body {
 }
 
 /* When on that page make it selected */
-.navbar li:active {
+.active {
     background-color: #555;
 }
 

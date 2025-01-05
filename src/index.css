@@ -1,0 +1,8 @@
+/* Style for the whole app */
+/* This is meant for styling the body or adding a font to everything for example. */
+
+html, body, #root {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+}
