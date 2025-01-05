@@ -10,27 +10,30 @@ body {
     overflow: hidden;
 }
 
-.buttonContainer {
+.button-container {
     float: left;
-    height: 100%;
     align-items: center;
-    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.buttonContainer button {
+.button-container button {
     display: block;
     margin: auto;
     border: none;
     background-color: rgba(0, 0, 0, 0);
-    font-size: 3rem;
+    font-size: 10rem;
     color: white;
+    opacity: 0.8    ;
 }
 
-.buttonContainer button:hover {
+.button-container button:hover {
     color: rgb(220, 220, 220)
 }
 
-.buttonContainer button:active {
+.button-container button:active {
     color: rgb(190, 190, 190)
 }
 
@@ -49,6 +52,7 @@ body {
     width: 40%;
     height: 100%;
     display: flex;
+    padding: 1%;
 }
 
 .info h2 {

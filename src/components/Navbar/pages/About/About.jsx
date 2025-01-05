@@ -55,16 +55,17 @@ export default function About() {
                 {/* by putting the key, this forces the program to re-reveal this element */}
                 <Fader side={index%2 == 1? "right": "left"} key={crypto.randomUUID()}>
                     <div id="box" className={index%2 == 1? "float-right": "float-left"}>
-                        <div className="buttonContainer">
-                            <button onClick={() => changeIndex(-1)}>&#x25B2;</button>
-                            <button onClick={() => changeIndex(1)}>&#x25BC;</button>
-                        </div>
                         <div className="info">
                             <h2>{boxes[index].title}</h2>
                             {boxes[index].text.split("|").map(text => <p key={crypto.randomUUID()}>{text}</p>)}
                         </div>
                     </div>
                 </Fader>
+                
+                <div className="button-container">
+                    <button onClick={() => changeIndex(-1)} id="up-btn">&#x25B2;</button>
+                    <button onClick={() => changeIndex(1)} id="down-btn">&#x25BC;</button>
+                </div>
             </div>
         </>
     )
