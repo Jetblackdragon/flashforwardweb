@@ -12,6 +12,8 @@
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-fade-in": "^2.0.1",
+    "react-reveal": "^1.2.2",
     "react-router-dom": "^7.1.1",
     "requirejs": "^2.3.7"
   },

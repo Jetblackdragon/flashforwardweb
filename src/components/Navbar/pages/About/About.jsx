@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './About.css';
+import { Fade } from 'react-reveal';
 
 export default function About() {
     // This is the about page, make it to whatever you want people to see when the click the about page
@@ -29,22 +30,41 @@ export default function About() {
         setIndex(Math.max(0, Math.min(boxes.length-1, index+d)));
     }
 
+    function Fader({ side, children, ...props }) {
+        if (side == "left") {
+            return (
+                <Fade left {...props}>
+                    {children}
+                </Fade>
+            )
+        } else if (side == "right") {
+            return (
+                <Fade right {...props}>
+                    {children}
+                </Fade>
+            )
+        }
+    }
+
     return (
         <>  
             {/* placeholder image */}
 
             <div className="content">
                 <div className="bg-image"></div>
-                <div className="box">
-                    <div className="buttonContainer">
-                        <button onClick={() => changeIndex(-1)}>&#x25B2;</button>
-                        <button onClick={() => changeIndex(1)}>&#x25BC;</button>
+                {/* by putting the key, this forces the program to re-reveal this element */}
+                <Fader side={index%2 == 1? "right": "left"} key={crypto.randomUUID()}>
+                    <div id="box" className={index%2 == 1? "float-right": "float-left"}>
+                        <div className="buttonContainer">
+                            <button onClick={() => changeIndex(-1)}>&#x25B2;</button>
+                            <button onClick={() => changeIndex(1)}>&#x25BC;</button>
+                        </div>
+                        <div className="info">
+                            <h2>{boxes[index].title}</h2>
+                            {boxes[index].text.split("|").map(text => <p key={crypto.randomUUID()}>{text}</p>)}
+                        </div>
                     </div>
-                    <div className="info">
-                        <h2>{boxes[index].title}</h2>
-                        {boxes[index].text.split("|").map(text => <p>{text}</p>)}
-                    </div>
-                </div>
+                </Fader>
             </div>
         </>
     )
