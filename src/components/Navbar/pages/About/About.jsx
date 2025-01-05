@@ -13,12 +13,15 @@ export default function About() {
         {   
             // All of the text for the currently doing should go here
             title: "What Are We Currently Doing?",
-            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            text: "Develop Solar Lighting Prototypes: We are building and testing solar-powered flashlights and lamps tailored to the specific needs of communities without reliable electricity.",
+            text: "Raise Awareness and Funds: Through our GoFundMe campaign, we are sharing our mission and gathering the resources needed to kickstart production and distribution.",
+            text: "Collaborate and Research: We are identifying communities that will benefit most from our solutions, while building partnerships with other nonprofits and organizations.",
+            text: "Launch Our Online Platform: We’re designing a website to share updates, connect with supporters, and provide transparent insights into our work and impact."
         },
         {   
             // All of the text for the who we are should go here
             title: "Who Are We?",
-            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            text: "At Flash Forward, we are a passionate team of high school students dedicated to making a lasting impact on communities with limited access to reliable electricity. Our nonprofit focuses on designing and distributing sustainable, solar-powered lighting solutions to empower individuals in underserved regions. With a shared vision of creating brighter futures, we aim to improve education, safety, and overall quality of life for those who need it most. We believe that something as simple as light can spark opportunity, hope, and progress. By leveraging creativity, teamwork, and technology, we strive to bridge the gap between innovation and accessibility, bringing light where it’s needed most."
         },
     ]
 
